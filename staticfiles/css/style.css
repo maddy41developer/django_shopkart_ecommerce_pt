@@ -1,0 +1,33 @@
+
+html {
+    font-size:14px;
+}
+
+a{
+    text-decoration: none;
+}
+.carousel-item img{
+    object-fit:cover;
+    object-position:top;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.old_price{
+    font-weight:bold;
+    color:red;}
+
+.new_price{
+    font-weight:bold;
+    background-color:green;
+    color:white;
+    border-radius:5px;
+    padding :2px }
+
+.hot {
+    color:red;
+}
+
+.checkoutform label{
+    font-size:16px;
+}
