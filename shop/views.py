@@ -195,7 +195,7 @@ def apple(request):
       return render(request,'shop/laptops/Apple_laptop.html')
 
 def asus(request):
-      return render(request,'shop/laptops/Asus laptop.html')
+      return render(request,'shop/laptops/Asus_laptop.html')
 
 def charger(request):
       return render(request,'shop/laptops/charger.html')
@@ -210,7 +210,7 @@ def headphone(request):
       return render(request,'shop/laptops/headphone.html')
 
 def Hp_15s(request):
-      return render(request,'shop/laptops/Hp 15s laptop.html')
+      return render(request,'shop/laptops/Hp_15s_laptop.html')
 
 def Hp_l(request):
       return render(request,'shop/laptops/Hp laptop.html')
@@ -224,34 +224,34 @@ def otg(request):
 #fashion
 
 def bluestripped(request):
-      return render(request,'shop/fashions/blue stripped.html')
+      return render(request,'shop/fashions/blue_stripped.html')
 
 def cottonformal(request):
-      return render(request,'shop/fashions/cotton formal.html')
+      return render(request,'shop/fashions/cotton_formal.html')
 
 def formalpants(request):
-      return render(request,'shop/fashions/formal pants.html')
+      return render(request,'shop/fashions/formal_pants.html')
 
 def formalshirts(request):
-      return render(request,'shop/fashions/formal shirts.html')
+      return render(request,'shop/fashions/formal_shirts.html')
 
 def fullsleeves(request):
-      return render(request,'shop/fashions/full sleeves.html')
+      return render(request,'shop/fashions/full_sleeves.html')
 
 def premiumshirts(request):
-      return render(request,'shop/fashions/premium shirts.html')
+      return render(request,'shop/fashions/premium_shirts.html')
 
 def printedpants (request):
-      return render(request,'shop/fashions/printed pants.html')
+      return render(request,'shop/fashions/printed_pants.html')
 
 def roundneck(request):
-      return render(request,'shop/fashions/round neck shirts.html')
+      return render(request,'shop/fashions/round_neck_shirts.html')
 
 def trackpants(request):
-      return render(request,'shop/fashions/track pants.html')
+      return render(request,'shop/fashions/track_pants.html')
 
 def cottonwhite(request):
-      return render(request,'shop/fashions/cotton white.html')
+      return render(request,'shop/fashions/cotton_white.html')
       
 
 
@@ -259,10 +259,10 @@ def cottonwhite(request):
 #mobiles
 
 def apple13(request):
-      return render(request,'shop/mobiles/apple 13.html')
+      return render(request,'shop/mobiles/apple_13.html')
 
 def apple14(request):
-      return render(request,'shop/mobiles/apple 14.html')
+      return render(request,'shop/mobiles/apple_14.html')
 
 def moto(request):
       return render(request,'shop/mobiles/moto.html')
