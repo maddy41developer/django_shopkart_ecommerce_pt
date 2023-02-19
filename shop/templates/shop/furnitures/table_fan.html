@@ -1,0 +1,64 @@
+{% load static %}
+{% include 'shop/layouts/main.html'  %}
+
+
+{% block title %}
+welcome | page
+{% endblock title %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% block content %}
+<section class="bg-light py-4 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="mb-3">Table fan Details</h4>
+                <hr style="border-color:#b8bfc2;">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                      <li class="breadcrumb-item"><a href="{%url 'collections'  %}">Collections</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">{{products}}</li>
+                    </ol>
+                  </nav>
+            </div>
+            
+            <div class="col-4 my-3 pic-box" style ="position:relative;">
+            
+              <div class="hot" style="background-color:orangered;color:white;width:40px;justify-content:right;text-align:center;font-weight:bold;display:inline;border-radius:5px;padding:3px;position:absolute;top: 1px;;z-index:5;">Hot</div>
+              
+               <div class ="col-md-10 col-lg-10" >
+               <div class="card " >
+                <div class="card shadow">
+                <img src ="{% static 'images/T-fan.jpeg' %}"  class="card-image-top" alt="Categories">
+                
+                </div>
+               </div>
+              </div>
+            </div>
+            
+            <div class="col-8 my-3">
+                <h5 class="text-success">Table fan</h5>
+                
+                <p>	imee-Typhoon High Speed Oscillating Farata Fan-110W(16IN)</p>
+                <h6 class="my-2 text-danger">Current Price : Rs. <s>2500</s></h6>
+                <h5 class="my-2 text-primary">Offer Price : Rs.1999	</h5>
+                <div class="my-3">
+                 
+                  
+                  
+                    <a href="{% url 'carts' %}"  class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                 
+                 
+                 <br>
+                 <br>
+                
+                 <a href="/BuyNow"   class="btn btn-secondary "><i class="fa fa-shopping-cart"></i> Buy Now</a>
+
+
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+{% endblock content %}
+{% include 'shop/inc/footer.html' %}

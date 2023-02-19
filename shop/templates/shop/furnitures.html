@@ -1,0 +1,247 @@
+{% extends 'shop/layouts/main.html'  %}
+{% load static %}
+
+{% block title %}
+Mobile | page
+{% endblock title %}
+{% block content %}
+
+<section class="bg-light py-4 my-5">
+    <div class="container" style = "margin-top:30px;">
+    <div class = "row">
+        <div class="col-12">
+            <h4 class="mb-3">Home appliances</h4>
+            <hr style="border-color:#b8bfc2;">
+            </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'aircoditioner' %}"> 
+                <center><img src="{% static 'images/air conditioner.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Air conditioner</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.29999</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.26999 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'aircooler' %}"> 
+                    <center><img src="{% static 'images/air Cooler.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Air-Cooler</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.7999</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.6999 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'chair' %}"> 
+                    <center><img src="{% static 'images/chair.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Chair</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.499</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.359 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'fan' %}"> 
+                    <center><img src="{% static 'images/fan.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Fan</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.1999</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;
+                        border-radius:5px;padding:2px; >Rs.1499 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'singlebed' %}"> 
+                    <center><img src="{% static 'images/single bed.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Single Bed</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.9999</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;
+                        border-radius:5px;padding:2px; >Rs.6999 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'swingchair' %}"> 
+                    <center><img src="{% static 'images/swing chair.png' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Swing Chair</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.1500</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.999 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'tablefan' %}"> 
+                    <center><img src="{% static 'images/table fan.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Table fan</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.2500</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.1999 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'doublebed' %}"> 
+                    <center><img src="{% static 'images/Double Bed.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Double Bed</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.14999</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.1399 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'diningtable' %}"> 
+                    <center><img src="{% static 'images/Dining Table.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Dining Table</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.6999</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.5999 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'writingtable' %}"> 
+                <center><img src="{% static 'images/writing pad.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Writing Table</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.599</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.499 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+       
+
+</div>
+</div> 
+</section>     
+
+
+{% include 'shop/inc/footer.html' %}
+{% endblock content %}
+</html>

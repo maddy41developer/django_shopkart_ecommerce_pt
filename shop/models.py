@@ -46,21 +46,7 @@ class Cart(models.Model):
     def total_cost(self):
         return self.product_qty*self.product.selling_price
 
-class Orders(models.Model):
-    user=models.ForeignKey(User,on_delete=models.CASCADE)
-    product=models.ForeignKey(Product,on_delete=models.CASCADE)
-    created_at=models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=255)
-    contact = models.CharField(max_length=10, null=True, blank=True)
-    created = models.DateTimeField(auto_now_add=True, editable=False)
-    address = models.TextField(blank=True, null=True)
-    count = models.IntegerField(default=1)
-    cost = models.IntegerField(default=0)
-    delivered = models.BooleanField(default=False)
-    delivered_on = models.DateTimeField(blank=True, null=True)
 
-    def __str__(self):
-        return self.name()
 
  
 class Favourite(models.Model):
@@ -83,6 +69,10 @@ class Order(models.Model):
     payment_mode=models.CharField(max_length=150,null=False)
     payment_id=models.CharField(max_length=250, null=True)
     product = models.CharField(max_length = 100,null=False)
+    quantity=models.IntegerField(null=False)
+    
+    
+
     #quantity=models.CharField(max_length =10,null=False)
     
     orderstatuses=(

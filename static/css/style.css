@@ -6,12 +6,7 @@ html {
 a{
     text-decoration: none;
 }
-.carousel-item img{
-    object-fit:cover;
-    object-position:top;
-    height: 50vh;
-    overflow: hidden;
-}
+
 
 .old_price{
     font-weight:bold;

@@ -1,1 +1,1 @@
-web: gunicorn 'maddy_project.wsgi'
+web : gunicorn 'maddy_project.wsgi'

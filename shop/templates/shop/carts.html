@@ -1,0 +1,93 @@
+{% extends 'shop/layouts/main.html' %}
+{% load static %}
+{% block title %}
+  Registration | ShopKart
+{% endblock title %}
+{% block content %}
+  <section class="bg-light py-4 my-5" style="min-height:600px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="mb-3">Cart  Items</h4>
+          <hr style="border-color:#b8bfc2;">
+        </div>
+      
+        <table class="table table-bordered">
+            <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+          
+
+            
+            <tr>
+                <td><img src="{% static 'images/Redmi-Note-10S.jpeg' %}" height="75px" alt="Redmi"></td>
+                <td>Redmi-Note-10s </td>
+                <td>1</td>
+                <td>8799</td>
+                
+                
+                <td><a href="#"  onclick="return confirm('Are you sure? to Remove')"  class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Remove</a></td>
+              </tr>
+
+            <tr>
+                <td><img src="{% static 'images/non stick dosa Tawa.jpg' %}" height="75px" alt="{{item.product.name}}"></td>
+                <td>non-stick dosa Tawa</td>
+                <td>1</td>
+                <td>199</td>
+               
+                
+                <td><a href="#"  onclick="return confirm('Are you sure? to Remove')"  class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Remove</a></td>
+              </tr>
+
+              <tr>
+                <td><img src="{% static 'images/air cooler.jpeg' %}" height="75px" alt="{{item.product.name}}"></td>
+                <td>Air-Cooler</td>
+                <td>1</td>
+                <td>6999</td>
+                
+                
+                <td><a href="#"  onclick="return confirm('Are you sure? to Remove')"  class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Remove</a></td>
+              </tr>
+
+              
+
+              <tr>
+                <td><img src="{% static 'images/lenovo laptop.jpeg' %}"height="75px" alt="{{item.product.name}}"></td>
+                <td>Leovo-laptop</td>
+                <td>1</td>
+                <td>35999</td>
+                
+                
+                <td><a href="#"  onclick="return confirm('Are you sure? to Remove')"  class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Remove</a></td>
+              </tr>
+            
+            <tr>
+              <td></td>
+              <td></td>
+              <td colspan="1"><b>Total Amount </b></td>
+              <td>51996</td>
+              
+              <td><a href="{% url 'checkout' %}" class="btn btn-outline-primary float-end">Checkout</a></td>
+            </tr>
+           
+        </table>
+       
+      </div>
+      </div>
+  </section>
+
+  <script>
+    const nodes = document.querySelectorAll('.amt');
+    const arr = Array.from(nodes);
+    const res = arr.reduce((acc, curr) => {
+     return acc += Number(curr.textContent)
+    }, 0);
+    document.getElementById("net").innerHTML="Rs : "+res;
+
+  </script>
+  {% include 'shop/inc/footer.html' %}
+{% endblock content %}

@@ -30,7 +30,7 @@ def remove_fav(request,fid):
 def cart_page(request):
   if request.user.is_authenticated:
     cart=Cart.objects.filter(user=request.user)
-    return render(request,"shop/cart.html",{"cart":cart})
+    return render(request,"shop/carts.html",{"cart":cart})
   else:
     return redirect("/")
  
@@ -170,14 +170,195 @@ def final_page(request,pname):
             return ("/")
       #messages.error(request,"No Such Catagory Found")
       #return redirect('collections')
+
+def carts(request):
+      return render(request,'shop/carts.html')
       
+def mobiles(request):
+      return render(request,"shop/mobiles.html")
+
+def menfashion(request):
+      return render(request,"shop/menfashion.html")
+
+def laptop(request):
+      return render(request,"shop/laptop.html")
+
+def kitchen(request):
+      return render(request,"shop/kitchens.html")
+
+def furnitures(request):
+      return render(request,"shop/furnitures.html")
+
+#laptops
+
+def apple(request):
+      return render(request,'shop/laptops/Apple_laptop.html')
+
+def asus(request):
+      return render(request,'shop/laptops/Asus laptop.html')
+
+def charger(request):
+      return render(request,'shop/laptops/charger.html')
+
+def earpod(request):
+      return render(request,'shop/laptops/earpod.html')
+
+def gionee(request):
+      return render(request,'shop/laptops/Gionee.html')
+
+def headphone(request):
+      return render(request,'shop/laptops/headphone.html')
+
+def Hp_15s(request):
+      return render(request,'shop/laptops/Hp 15s laptop.html')
+
+def Hp_l(request):
+      return render(request,'shop/laptops/Hp laptop.html')
+
+def lenovo(request):
+      return render(request,'shop/laptops/Lenovo laptop.html')
+
+def otg(request):
+      return render(request,'shop/laptops/otg.html')
+
+#fashion
+
+def bluestripped(request):
+      return render(request,'shop/fashions/blue stripped.html')
+
+def cottonformal(request):
+      return render(request,'shop/fashions/cotton formal.html')
+
+def formalpants(request):
+      return render(request,'shop/fashions/formal pants.html')
+
+def formalshirts(request):
+      return render(request,'shop/fashions/formal shirts.html')
+
+def fullsleeves(request):
+      return render(request,'shop/fashions/full sleeves.html')
+
+def premiumshirts(request):
+      return render(request,'shop/fashions/premium shirts.html')
+
+def printedpants (request):
+      return render(request,'shop/fashions/printed pants.html')
+
+def roundneck(request):
+      return render(request,'shop/fashions/round neck shirts.html')
+
+def trackpants(request):
+      return render(request,'shop/fashions/track pants.html')
+
+def cottonwhite(request):
+      return render(request,'shop/fashions/cotton white.html')
       
+
+
+
+#mobiles
+
+def apple13(request):
+      return render(request,'shop/mobiles/apple 13.html')
+
+def apple14(request):
+      return render(request,'shop/mobiles/apple 14.html')
+
+def moto(request):
+      return render(request,'shop/mobiles/moto.html')
+
+def oneplus(request):
+      return render(request,'shop/mobiles/oneplus.html')
+
+def oppo(request):
+      return render(request,'shop/mobiles/oppo.html')
+
+def realme(request):
+      return render(request,'shop/mobiles/realme.html')
+
+def redmi10 (request):
+      return render(request,'shop/mobiles/redmi10.html')
+
+def  redmi11(request):
+      return render(request,'shop/mobiles/redmi11.html')
+
+def  redmi12(request):
+      return render(request,'shop/mobiles/redmi12.html')
+
+def vivo(request):
+      return render(request,'shop/mobiles/vivo.html')
+
+#home
+
+def aircoditioner(request):
+      return render(request,'shop/furnitures/air_conditioner.html')
+
+def aircooler(request):
+      return render(request,'shop/furnitures/air_cooler.html')
+
+def chair(request):
+      return render(request,'shop/furnitures/chair.html')
+
+def diningtable(request):
+      return render(request,'shop/furnitures/dining_table.html')
+
+def doublebed(request):
+      return render(request,'shop/furnitures/double_bed.html')
+
+def fan(request):
+      return render(request,'shop/furnitures/fan.html')
+
+def singlebed (request):
+      return render(request,'shop/furnitures/singlebed.html')
+
+def swingchair (request):
+      return render(request,'shop/furnitures/swing_chair.html')
+
+def tablefan(request):
+      return render(request,'shop/furnitures/table_fan.html')
+
+def writingtable(request):
+      return render(request,'shop/furnitures/writing_table.html')
+
+#kitchens
+
+def bottles(request):
+      return render(request,'shop/homes/bottles.html')
+
+def box(request):
+      return render(request,'shop/homes/box.html')
+
+def chopper(request):
+      return render(request,'shop/homes/chopper.html')
+
+def cooker(request):
+      return render(request,'shop/homes/cooker.html')
+
+def juicer(request):
+      return render(request,'shop/homes/juicer.html')
+
+def kadai(request):
+      return render(request,'shop/homes/kadai.html')
+
+def maker(request):
+      return render(request,'shop/homes/maker.html')
+
+def rack(request):
+      return render(request,'shop/homes/rack.html')
+
+def tawa(request):
+      return render(request,'shop/homes/tawa.html')
+
+def tool(request):
+      return render(request,'shop/homes/tool.html')
+
+
       
 
 def checkout(request):
   if request.user.is_authenticated:
         cart=Cart.objects.filter(user=request.user)
-        return render(request,"shop/checkout.html",{"carts":cart})
+        return render(request,"shop/products/BuyNow.html")
   else:
     return redirect("/")
 
@@ -251,9 +432,13 @@ def buttonholder(request):
                   neworder.country = request.POST.get('country')
                   neworder.pincode = request.POST.get('pincode')
                   neworder.payment_mode = request.POST.get('payment_mode')
-                  neworder.total_price = request.POST.get('total_price')
+                  neworder.total_price = request.POST.get('price')
+                  neworder.product=request.POST.get('product')
+                  neworder.quantity=request.POST.get('quantity')
+
+                  
+
                   neworder.save()
                   messages.success(request,"Your order has been placed successfully")  
-      else:
-            return render('/')       
+            
       return render(request,"shop/thanks.html")

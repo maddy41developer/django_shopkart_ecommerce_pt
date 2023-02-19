@@ -51,8 +51,17 @@
                         <input type="text" required class="form-control" name="pincode" place holder="Enter Pincode">
                     </div>
                     <div class="col-md-6">
-                        <label>Total Price</label>
-                        <input type="text" required class="form-control" name="total_price" place holder="Enter Pincode">
+                        <label>Product</label>
+                        <input type="text" required class="form-control" name="product" place holder="Enter your product">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Quantity</label>
+                        <input type="text" required class="form-control" name="quantity" place holder="Enter Quantity">
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label> Price</label>
+                        <input type="text" required class="form-control" name="price" place holder="Enter Product price">
                     </div>
                 </div>
             </div>
@@ -61,35 +70,10 @@
     <div class="col-md-5">
         <div class="card shadow">
             <div class="card-body">
-                <h6>Order Summary</h6>
+                <h6>Order Now</h6>
                 <hr>
                 
-                 <table class="table table-stripeds table-bordereds">
-                    <thead>
-                        <tr>
-                            <th> Product</th>
-                            <th> Qty</th>
-                            <th> Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        
-                          <tr>
-                            <td>
-                                <img src="{{ products.Product_image.url }}" height="50px" xlass="me-2" width="50px">
-                                {{ product.name }}
-                                
-                            </td>
-                            <td> {{ product_qty }}</td>
-                            <td> {{ product.selling_price | stringformat:'d' }}</td>
-                          </tr>
-                          
-                    </tbody>
-                 </table>
-                 <h6 class="fw-bold">Grand Total
-                    <span class="float-end"> Rs {{ total_cost | stringformat:'d' }}</span>
-             "    </h6>
+                 
                   <input type="hidden" value ="COD" name="payment_mode">
                  <div class="mt-3">
                     

@@ -1,0 +1,247 @@
+{% extends 'shop/layouts/main.html'  %}
+{% load static %}
+
+{% block title %}
+Mobile | page
+{% endblock title %}
+{% block content %}
+
+<section class="bg-light py-4 my-5">
+    
+<div class="container" style = "margin-top:70px;">
+    <div class = "row">
+        <div class="col-12">
+            <h4 class="mb-3">Laptops</h4>
+            <hr style="border-color:#b8bfc2;">
+            </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'hp_15s' %}"> 
+                <center><img src="{% static 'images/Hp 15s laptop.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+            </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">HP 15s standard Laptop</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.63000</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.62000 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'lenovo' %}"> 
+                    <center><img src="{% static 'images/lenovo laptop.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Lenovo L21N Ideapad3 Laptop</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.37000</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.35999</span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'asus' %}"> 
+                    <center><img src="{% static 'images/Asus laptop.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Asus EK342WS laptop</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.36000</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.34999 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="{% url 'asus' %}">
+                <a href="{% url 'apple' %}"> 
+                    <center><img src="{% static 'images/Apple laptop.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Apple MacBook Air Laptop</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.84000</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:
+                        5px;padding:2px; >Rs.83900 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'hp_l' %}"> 
+                    <center><img src="{% static 'images/Hp laptop.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">HP 15s-fr5007TU Laptop</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.29999</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.27000 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'gionee' %}"> 
+                    <center> <img src="{% static 'images/headset.jpeg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Gionee Gbuddy EP12-BLISS 112</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.200</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.159 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'headphone' %}"> 
+                    <center><img src="{% static 'images/Base blutooth headphone.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">V-Luma Blue Extra Bass Wired</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.300</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.266 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'earpod' %}"> 
+                    <center><img src="{% static 'images/earpod.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Mivi Black Duopods A25 Wireless</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.1300</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.1199 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'otg' %}"> 
+                    <center><img src="{% static 'images/otg.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">PunnkFunnk OTG Type-C Cables</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.200</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-radius:5px;padding:2px; >Rs.179 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <div class ="col-md-4 col-lg-3" >
+            <div class="card  my-3" >
+                <div class="card shadow">
+                <a href="{% url 'charger' %}"> 
+                    <center><img src="{% static 'images/laptop charger.jpg' %}" style = "height:130px;width:130px;margin-top:20px;" class="card-image" alt="Categories">
+                    </center>
+                    <hr>
+                <div class="card-body">
+                    <h5 class="card-title text-primary">SellZone Adapter Charger for Dell</h5>
+                    <p class="card-text">
+                        <span class="float-start old_price" style =font-weight:bold;color:red;><s>Rs.900</s></span> 
+                        <span class="float-end new_price" style =font-weight:bold;color:white;background-color:green;border-
+                        radius:5px;padding:2px; >Rs.792 </span>
+
+
+                    </p>
+                    
+                </div>
+            </a>
+            </div>
+        </div>
+        </div>
+       
+
+</div>
+</div> 
+</section>     
+
+
+{% include 'shop/inc/footer.html' %}
+{% endblock content %}

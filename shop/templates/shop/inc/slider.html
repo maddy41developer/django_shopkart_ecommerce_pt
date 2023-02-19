@@ -1,4 +1,12 @@
 {% load static %}
+
+<style>
+
+  /* =Responsive Structure
+----------------------------------------------- */
+
+</style>
+<section class="bg-light py-4 my-4">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -8,28 +16,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{% static 'images/1.jpg' %}" class="d-block w-100" alt="Slide 1" style ="object-fit:cover;
-        object-position:top;
-        height: 65vh;
-        overflow: hidden;">
+        <center><img src="{% static 'images/1.png' %}" class="d-block w-100" alt="Slide 1" style ="object-fit:cover;
+          " ></center>
       </div>
       <div class="carousel-item">
-        <img src="{% static 'images/2.jpg' %}" class="d-block w-100" alt="Slide 2" style ="object-fit:cover;
-        object-position:top;
-        height: 65vh;
-        overflow: hidden;">
+        <center><img src= "{% static 'images/2.jpg' %}"class="d-block w-100" alt="Slide 2" style ="object-fit:cover;
+       "></center>
+       
       </div>
       <div class="carousel-item">
-        <img src="{% static 'images/3.jpeg' %}" class="d-block w-100" alt="Slide 3" style ="object-fit:cover;
-        object-position:top;
-        height: 65vh;
-        overflow: hidden;">
+        <center><img src="{% static 'images/3.jpg' %}" class="d-block w-100" alt="Slide 3" style ="object-fit:cover;
+      "></center>
       </div>
       <div class="carousel-item">
-        <img src="{% static 'images/4.jpg' %}" class="d-block w-100" alt="Slide 4" style ="object-fit:cover;
-        object-position:top;
-        height: 65vh;
-        overflow: hidden;">
+        <center><img src="{% static 'images/4.jpg' %}" class="d-block w-100" alt="Slide 4" style ="object-fit:cover;
+      "></center>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -41,3 +42,4 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+</section>
